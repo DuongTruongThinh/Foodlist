@@ -29,8 +29,13 @@
       href="../../assets/lib/css/bootstrap/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- cdn toastify js -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
     <link rel="stylesheet" href="../../assets/css/foodList.css" />
-
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -165,7 +170,7 @@
                   <th>Khuyến Mãi</th>
                   <th>Giá KM</th>
                   <th>Tình Trạng</th>
-                  <th></th>
+                  <th>Thao tác</th>
                 </tr>
               </thead>
               <tbody id="tbodyFood"></tbody>
@@ -311,10 +316,20 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-warning" id="btnCapNhat">
+            <button
+              onclick="updateFood()"
+              type="button"
+              class="btn btn-warning"
+              id="btnCapNhat"
+            >
               Cập Nhật
             </button>
-            <button type="button" class="btn btn-warning" id="btnThemMon">
+            <button
+              onclick="addFood()"
+              type="button"
+              class="btn btn-warning"
+              id="btnThemMon"
+            >
               Thêm
             </button>
           </div>
@@ -330,6 +345,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- cdn toastify js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <!-- my js -->
     <script type="module" src="../controllers/v2/main-v2.js"></script>
   </body>
 </html>

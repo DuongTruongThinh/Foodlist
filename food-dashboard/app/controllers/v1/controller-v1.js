@@ -1,10 +1,10 @@
 export function layThongTinTuForm() {
   let ma = document.getElementById("foodID").value;
   let ten = document.getElementById("tenMon").value;
-  let loai = document.getElementById("loai").value;
+  let loai = document.getElementById("loai").value == "loai1";
   let gia = document.getElementById("giaMon").value * 1;
   let khuyenMai = document.getElementById("khuyenMai").value;
-  let tinhTrang = document.getElementById("tinhTrang").value;
+  let tinhTrang = document.getElementById("tinhTrang").value == "1";
   let hinhMon = document.getElementById("hinhMon").value;
   let moTa = document.getElementById("moTa").value;
   return {
